@@ -48,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: pages
+        #  name: pages
           path: ./out
 
       - name: Deploy to GitHub Pages
@@ -56,4 +56,3 @@ jobs:
         uses: actions/deploy-pages@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifact: pages
