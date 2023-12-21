@@ -15,11 +15,11 @@ jobs:
 
     environment:
       name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
+      url: ${{ steps.step_name.outputs.url_output }}
 
     strategy:
       matrix:
-        node-version: [14]  # Change this to the appropriate Node.js version
+        node-version: [18]  # Change this to the appropriate Node.js version
 
     steps:
       - name: Checkout repository
