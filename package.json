@@ -6,7 +6,7 @@
     "dev": "next dev",
 
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=development next start",
     "dev:static": "serve ./out",
     "export": "next build && next export",
     "lint": "next lint --max-warnings=0",
